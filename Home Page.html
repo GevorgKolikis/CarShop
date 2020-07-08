@@ -241,195 +241,262 @@
 
 
 
-<div class="container-fluid">
-  <div class="row text-center b25 text-light text-uppercase ">
 
-<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner ">
-    <div class="carousel-item active">
-      <img style ='opacity: 0.7;' src="https://eskipaper.com/images/mercedes-background-1.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block ">
-        <h5>Mercedes</h5>
-        <a class="btn btn-primary" href="#">See catalog</a>
+
+
+
+<!--content-->
+<div class="container-lg">
+      <div class="row d-lg-flex">
+
+          
+        <nav class="col-lg-7" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Categories
+</li>
+          </ol>
+        </nav>
+            <div class="col-lg-3 mb-2">
+          <form>
+          <select class="custom-select mr-sm-2 border-dark" id="inlineFormCustomSelect">
+            <option class="text-capitalize" selected="">Priced Form Low To High</option>
+            <option value="1" class="text-capitalize">Priced form high to low</option>
+            <option value="2" class="text-capitalize">by popularity</option>
+            <option value="3" class="text-capitalize">by rating</option>
+          </select>
+        </form>
+            </div>
+    <div class="col-md-2 p-0 d-lg-block d-md-none">
+      
+    </div>
+    </div>
+     <div class="row">
+       <div class="col-lg-2 my-3"><div class="accordion" id="accordionExample">
+  
+
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h2 class="mb-0">
+        <button class="btn btn-block text-left collapsed text-capitalize" type="button" data-toggle="collapse" data-target="#collapsePrice" aria-expanded="true" aria-controls="collapsePrice">
+          Choose Price
+        </button>
+      </h2>
+    </div>
+
+    <div id="collapsePrice" class="collapse" aria-labelledby="headingPrice" data-parent="#accordionExample">
+      <div class="card-body">
+      <form> <div class="custom-control custom-checkbox m-2">
+        <input type="checkbox" class="custom-control-input" id="customCheck">
+        <label class="custom-control-label" for="customCheck">Less Than 2000</label>
+      </div>
+      <div class="custom-control custom-checkbox m-2">
+        <input type="checkbox" class="custom-control-input" id="customCheck2">
+        <label class="custom-control-label" for="customCheck2">2000 To 10000</label>
+      </div>
+     <div class="custom-control custom-checkbox m-2">
+        <input type="checkbox" class="custom-control-input" id="customCheck3">
+        <label class="custom-control-label" for="customCheck3">10000 To 50000</label>
+      </div>
+      <div class="custom-control custom-checkbox m-2">
+        <input type="checkbox" class="custom-control-input" id="customCheck4">
+        <label class="custom-control-label" for="customCheck4">More Than 50000</label>
+      </div>
+    </form>
       </div>
     </div>
-    <div class="carousel-item">
-      <img src="https://eskipaper.com/images/motorcycles-6.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>motorcycles</h5>
-        <a class="btn btn-primary" href="#">See catalog</a>
+  </div>
+  
+
+
+
+
+  
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h2 class="mb-0">
+        <button class="btn btn-block text-left collapsed text-capitalize" type="button" data-toggle="collapse" data-target="#collapsecolor" aria-expanded="false" aria-controls="collapsecolor">
+      choose color
+        </button>
+      </h2>
+    </div>
+    <div id="collapsecolor" class="collapse" aria-labelledby="headingcolor" data-parent="#accordionExample">
+      <div class="card-body">
+       <form class="d-flex">
+        <div class="mx-1">
+         <div class="custom-control custom-checkbox m-1">
+          <input type="checkbox" class="custom-control-input" id="red">
+          <label class="custom-control-label" for="red"><img width="30px" height="30px" src="img\Screen+Shot+2018-04-23+at+5.23.41+PM.png" class="rounded-circle"></label>
+        </div>
+         <div class="custom-control custom-checkbox m-1">
+          <input type="checkbox" class="custom-control-input" id="blue">
+          <label class="custom-control-label" for="blue"><img width="30px" height="30px" src="img\indigo-blue.jpg" class="rounded-circle"></label>
+        </div>
+         <div class="custom-control custom-checkbox m-1">
+          <input type="checkbox" class="custom-control-input" id="green">
+          <label class="custom-control-label" for="green"><img width="30px" height="30px" src="img\Green_square.svg.png" class="rounded-circle"></label>
+        </div>
+         <div class="custom-control custom-checkbox m-1">
+          <input type="checkbox" class="custom-control-input" id="yellow">
+          <label class="custom-control-label" for="yellow"><img width="30px" height="30px" src="img\Spectrum-Solids-Bright-Yellow.jpg" class="rounded-circle"></label>
+        </div>
+        </div>
+           <div class="mx-1">
+         <div class="custom-control custom-checkbox m-1">
+          <input type="checkbox" class="custom-control-input" id="gray">
+          <label class="custom-control-label" for="gray"><img width="30px" height="30px" src="img\Lead-Gray.jpg" class="rounded-circle"></label>
+        </div>
+         <div class="custom-control custom-checkbox m-1">
+          <input type="checkbox" class="custom-control-input" id="brown">
+          <label class="custom-control-label" for="brown"><img width="30px" height="30px" src="img\Без названия.png" class="rounded-circle"></label>
+        </div>
+         <div class="custom-control custom-checkbox m-1">
+          <input type="checkbox" class="custom-control-input" id="white">
+          <label class="custom-control-label" for="white"><img width="30px" height="30px" src="img\59522.jpg" class="rounded-circle"></label>
+        </div>
+         <div class="custom-control custom-checkbox m-1">
+          <input type="checkbox" class="custom-control-input" id="black">
+          <label class="custom-control-label" for="black"><img width="30px" height="30px" src="img\1280px-Black_flag.svg.png" class="rounded-circle"></label>
+        </div>
+        </div>
+       </form>
       </div>
     </div>
-    <div class="carousel-item">
-      <img src="https://eskipaper.com/images/	ferrari-forged-wheels-1.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Ferrari Forged Wheels</h5>
-        <a class="btn btn-primary" href="#">See catalog</a>
+  </div>
+
+
+
+
+
+
+
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h2 class="mb-0">
+        <button class="btn btn-block text-left collapsed text-capitalize" type="button" data-toggle="collapse" data-target="#collapseSeason" aria-expanded="true" aria-controls="collapseSeason">
+          ........
+        </button>
+      </h2>
+    </div>
+
+    <div id="collapseSeason" class="collapse" aria-labelledby="headingSeason" data-parent="#accordionExample">
+      <div class="card-body">
+       <form> <div class="custom-control custom-checkbox mx-2">
+        <input type="checkbox" class="custom-control-input" >
+        <label class="custom-control-label" >...</label>
+      </div>
+      <div class="custom-control custom-checkbox mx-2">
+        <input type="checkbox" class="custom-control-input" >
+        <label class="custom-control-label" >...</label>
+      </div>
+     <div class="custom-control custom-checkbox mx-2">
+        <input type="checkbox" class="custom-control-input" >
+        <label class="custom-control-label" >.....</label>
+      </div>
+    </form>
       </div>
     </div>
   </div>
 </div>
-</div>
-</div>
-<div class="container-fluid">
-<div class="row">
-  <h1 class="text-center display-4 mx-auto text-white a4">Daily Deals</h1>
-<div class="w-100 p-5 d-lg-flex flex-row justify-content-center">
-  <div class="card mx-auto col-lg-2 col-sm-6 ">
-<img src="https://eskipaper.com/images/		bmw-i8-pictures-2.jpg" class="card-img-top" alt="...">
-<div class="card-body">
-  <h5 class="card-title">BMW i8 Pictures</h5>
-  <p class="card-body d-flex flex-column justify-content-end"><strong>137,000 $</strong></p>
-  <p class="card-text text-muted"><s>140,000 $</s></p>
-  <a href="BMW i8 Pictures1.html" class="btn btn-outline-secondary">Buy now</a>
-</div>
-</div>
-<div class="card mx-auto col-lg-2 col-sm-6 ">
-<img src="https://eskipaper.com/images/		mercedes-benz-1.jpg" class="card-img-top" alt="...">
-<div class="card-body">
-  <h5 class="card-title">Mercedes Benz</h5>
-  <p class="card-text text-success"><strong>37,000 $</strong></p>
-  <p class="card-text text-muted"><s>37,500 $</s></p>
-  <a href="#" class="btn btn-outline-secondary">Buy now</a>
-</div>
-</div>
-
-<div class="card mx-auto col-lg-2 col-sm-6 ">
-<img src="https://eskipaper.com/images/	peugeot-onyx-concept-1.jpg" class="card-img-top" alt="...">
-<div class="card-body">
-  <h5 class="card-title">Peugeot Onyx Concept </h5>
-  <p class="card-text text-success"><strong>17,500 $</strong></p>
-  <p class="card-text text-muted"><s>17,666 $</s></p>
-  <a href="#" class="btn btn-outline-secondary">Buy now</a>
-</div>
-</div>
-<div class="card mx-auto col-lg-2 col-sm-6 ">
-<img src="https://eskipaper.com/images/mclaren-p1-sunrise-1.jpg" class="card-img-top" alt="...">
-<div class="card-body">
-  <h5 class="card-title">Mclaren p1 sunrise</h5>
-  <p class="card-text text-success"><strong>4,289,500 $</strong></p>
-  <p class="card-text text-muted"><s>4,300,000 $</s></p>
-  <a href="#" class="btn btn-outline-secondary">Buy now</a>
-</div>
-</div>
-
-<div class="card mx-auto col-lg-2 col-sm-6 ">
-<img src="https://eskipaper.com/images/	mercedesbenz-cls-63-car-1.jpg" class="card-img-top" alt="...">
-<div class="card-body">
-  <h5 class="card-title">Mercedes-Benz CLS 63 Car</h5>
-  <p class="card-text text-success"><strong>298,999 $</strong></p>
-  <p class="card-text text-muted"><s>299,999 $</s></p>
-  <a href="#" class="btn btn-outline-secondary">Buy now</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="container-fluid">
-<div class='row'>
-  <div class="col-md-12 d-flex">
-    <h1 class=" ml-auto  mt-5 mb-5 mr-auto text-white a4 ">CATEGORY</h1>
-      </div>
-      <div class="mx-auto border border-light card col-12 col-sm-6 col-lg-4 col-xl-2 a1 ">
-<img src="https://eskipaper.com/images/	bmw-pictures-3.jpg"  class="card-img-top" alt="...">
-<div class="card-body">
-<h5 class="card-title  text-white"> BMW</h5>
-<a href="BMW.html" class="btn btn-primary">Category</a>
-</div>
-</div>
-<div class="mx-auto border border-light card col-12 col-sm-6 col-lg-4 col-xl-2 a1 ">
-<img src="https://eskipaper.com/images/mclaren-mp4-monochrome-1.jpg" class="card-img-top" alt="...">
-<div class="card-body">
-<h5 class="card-title  text-white">Mclaren</h5>
-<a href="Mclaren.html" class="btn btn-primary">Category</a>
-</div>
-</div>
-<div class="mx-auto border border-light card col-12 col-sm-6 col-lg-4 col-xl-2 a1 ">
-<img src="https://eskipaper.com/images/	mercedes-benz-1.jpg" class="card-img-top" alt="...">
-<div class="card-body">
-<h5 class="card-title  text-white">Mercedes</h5>
-<a href="Mercedes.html" class="btn btn-primary">Category</a>
-</div>
-</div>
-<div class="mx-auto border border-light card col-12 col-sm-6 col-lg-4 col-xl-2 a1 ">
-<img src="https://eskipaper.com/images/		mitsubishi-lancer-evolution-x-1.jpg" class="card-img-top" alt="...">
-<div class="card-body">
-<h5 class="card-title  text-white">Mitsubishi</h5>
-<a href="Mitsubishi.html" class="btn btn-primary">Category</a>
-</div>
-</div>
-<div class="mx-auto border border-light card col-12 col-sm-6 col-lg-4 col-xl-2 a1 ">
-<img src="https://eskipaper.com/images/murcielago-lp670-sv-1.jpg" class="card-img-top" alt="...">
-<div class="card-body">
-<h5 class="card-title  text-white">Murcielago</h5>
-<a href="Murcielago.html" class="btn btn-primary">Category</a>
-</div>
-</div>
-<div class="mx-auto border border-light card col-12 col-sm-6 col-lg-4 col-xl-2 a1 ">
-<img src="https://eskipaper.com/images/nissan-350z-tuning-1.jpg" class="card-img-top" alt="...">
-<div class="card-body">
-<h5 class="card-title  text-white">Nissan</h5>
-<a href="Nissan.html" class="btn btn-primary">Category</a>
-</div>
-</div> 
-<div class="mx-auto border border-light card col-12 col-sm-6 col-lg-4 col-xl-2 a1 ">
-<img src="https://eskipaper.com/images/	nsx-wallpaper-hd-1.jpgg" class="card-img-top" alt="...">
-<div class="card-body">
-<h5 class="card-title  text-white">NSX</h5>
-<a href="NSX.html" class="btn btn-primary">Category</a>
-</div>
-</div>
-<div class="mx-auto border border-light card col-12 col-sm-6 col-lg-4 col-xl-2 a1 ">
-<img src="https://eskipaper.com/images/porsche-991-hd-1.jpg" class="card-img-top" alt="...">
-<div class="card-body">
-<h5 class="card-title  text-white">Porsche</h5>
-<a href="Porsche.html" class="btn btn-primary">Category</a>
-</div>
-</div>
-<div class="mx-auto border border-light card col-12 col-sm-6 col-lg-4 col-xl-2 a1">
-<img src="https://eskipaper.com/images/range-rover-land-rover-car-wheels-tuning-1.jpg" class="card-img-top" alt="...">
-<div class="card-body">
-<h5 class="card-title  text-white">Range Rover</h5>
-<a href="Range Rover.html" class="btn btn-primary">Category</a>
-</div>
-</div>
-<div class="mx-auto border border-light card col-12 col-sm-6 col-lg-4 col-xl-2 a1">
-<img src="https://eskipaper.com/images/	lexus-1.jpg" class="card-img-top" alt="...">
-<div class="card-body">
-<h5 class="card-title  text-white">Lexus</h5>
-<a href="Lexus.html" class="btn btn-primary">Category</a>
-</div>
-</div>
-<div class="mx-auto border border-light card col-12 col-sm-6 col-lg-4 col-xl-2 a1 ">
-<img src="https://eskipaper.com/images/motorcycles-5.jpg" class="card-img-top" alt="...">
-<div class="card-body">
-<h5 class="card-title  text-white">Motorcycles</h5>
-<a href="Motorcycles.html" class="btn btn-primary">Category</a>
-</div>
-</div>
-<div class="mx-auto border border-light card col-12 col-sm-6 col-lg-4 col-xl-2 a1">
-<img src="https://eskipaper.com/images/lexus-is-wheels-1.jpg" class="card-img-top" alt="...">
-<div class="card-body">
-<h5 class="card-title  text-white">Car Wheels</5>
-<a href="Car Wheels.html" class="btn btn-primary">Category</a>
-</div>
-</div>
 
 </div>
-
-</div>
-
-</div>
+       
 
 
 
 
 
+
+
+
+
+
+       <div class="row col-lg-10">
+         <div class="card col-lg my-3 mx-1 border-0">
+          <img src="https://eskipaper.com/images/		bmw-i8-pictures-2.jpg" class="card-img-top" alt="...">
+          <div class="card-body p-1 m-1">
+            <h5 class="card-title"><a href="BMW i8 Pictures1.html">BMW i8 Pictures</a></h5>
+            <p class="card-text text-success"><strong>137,000 $</strong></p>
+            <p class="card-text text-muted"><s>140,000 $</s></p>
+                    <a href="#" class="btn btn-outline-secondary text-left text-capitalize  d-md-inline d-none" data-toggle="modal" data-target="#quickview">quick view</a>
+                    <a href="#" class="btn btn-secondary text-left">Add To Card</a>
+          </div>
+        </div>
+        <div class="card col-lg my-3 mx-1 border-0">
+          <img src="https://eskipaper.com/images/		mercedes-benz-1.jpg" class="card-img-top" alt="...">
+          <div class="card-body p-1 m-1">
+            <h5 class="card-title"><a href="#">Mercedes Benz</a></h5>
+            <p class="card-text text-success"><strong>37,000 $</strong></p>
+            <p class="card-text text-muted"><s>37,500 $</s></p>
+                    <a href="#" class="btn btn-outline-secondary text-left text-capitalize d-md-inline d-none" data-toggle="modal" data-target="#quickview">quick view</a>
+                    <a href="#" class="btn btn-secondary text-left">Add To Card</a>
+          </div>
+        </div>
+        <div class="card col-lg my-3 mx-1 border-0">
+          <img src="https://eskipaper.com/images/	peugeot-onyx-concept-1.jpg" class="card-img-top" alt="...">
+          <div class="card-body p-1 m-1">
+            <h5 class="card-title"><a href="#">Peugeot Onyx Concept </a></h5>
+            <p class="card-text text-success"><strong>17,500 $</strong></p>
+            <p class="card-text text-muted"><s>17,666 $</s></p>
+                    <a href="#" class="btn btn-outline-secondary text-left text-capitalize  d-md-inline d-none" data-toggle="modal" data-target="#quickview">quick view</a>
+                    <a href="#" class="btn btn-secondary text-left">Add To Card</a>
+          </div>
+        </div>
+            <div class="w-100"></div>
+        <div class="card col-lg my-3 mx-1 border-0">
+          <img src="https://eskipaper.com/images/mclaren-p1-sunrise-1.jpg" class="card-img-top" alt="...">
+          <div class="card-body p-1 m-1">
+            <h5 class="card-title"><a href="#">Mclaren p1 sunrise</a></h5>
+            <p class="card-text text-success"><strong>4,289,500 $</strong></p>
+            <p class="card-text text-muted"><s>4,300,000 $</s></p>
+                    <a href="#" class="btn btn-outline-secondary text-left text-capitalize  d-md-inline d-none" data-toggle="modal" data-target="#quickview">quick view</a>
+                    <a href="#" class="btn btn-secondary text-left">Add To Card</a>
+          </div>
+        </div>
+        <div class="card col-lg my-3 mx-1 border-0">
+          <img src="https://eskipaper.com/images/		bmw-i8-pictures-2.jpg" class="card-img-top" alt="...">
+          <div class="card-body p-1 m-1">
+            <h5 class="card-title"><a href="BMW i8 Pictures1.html">BMW i8 Pictures</a></h5>
+            <p class="card-text text-success"><strong>137,000 $</strong></p>
+            <p class="card-text text-muted"><s>140,000 $</s></p>
+                    <a href="#" class="btn btn-outline-secondary text-left text-capitalize  d-md-inline d-none" data-toggle="modal" data-target="#quickview">quick view</a>
+                    <a href="#" class="btn btn-secondary text-left">Add To Card</a>
+          </div>
+        </div>
+        <div class="card col-lg my-3 mx-1 border-0">
+          <img src="https://eskipaper.com/images/	mercedesbenz-cls-63-car-1.jpg" class="card-img-top" alt="...">
+          <div class="card-body p-1 m-1">
+            <h5 class="card-title"><a href="#">Mercedes-Benz CLS 63 Car</a></h5>
+            <p class="card-text text-success"><strong>298,999 $</strong></p>
+            <p class="card-text text-muted"><s>299,999 $</s></p>
+                    <a href="#" class="btn btn-outline-secondary text-left text-capitalize  d-md-inline d-none" data-toggle="modal" data-target="#quickview">quick view</a>
+                    <a href="#" class="btn btn-secondary text-left">Add To Card</a>
+          </div>
+        </div>
+       </div>
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     </div>  
+</div>
 
 
 <br>
@@ -452,16 +519,6 @@
     </li>
   </ul>
 </nav>
-
-
-
-
-
-
-
-
-
-
 
 
 
