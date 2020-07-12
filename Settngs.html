@@ -8,6 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="jquery.fancybox.min.css">
     <style>
       .b25{
         background: #252525;
@@ -15,9 +16,7 @@
       .b1{
         background: #1b1b1b;
       }
-      body{
-        background-color: black;
-      }
+      
       .a1{
         background: #1b1b1b;
       }
@@ -239,145 +238,298 @@
 
 
 
-
-
-<div class="container-fluid">
-  <div class="row text-center b25 text-light text-uppercase ">
-
-<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner ">
-    <div class="carousel-item active">
-      <img style ='opacity: 0.7;' src="https://eskipaper.com/images/mercedes-background-1.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block ">
-        <h5>Mercedes</h5>
-        <a class="btn btn-primary" href="#">See catalog</a>
+<div class="row justify-content-center p-1">
+  <div class="col-2 d-none d-md-block">
+    <ul class="list-group">
+      <!-- top -->
+  <li class="list-group-item border-top borderless pb-1 d-flex justify-content-center">
+<form><a href="MyOrder.html" class="text-decoration-none"><button type="button" class="btn btn-secondary btn-block">My Orders</button></a></form>
+  </li>
+  <li class="list-group-item  borderless pb-1 d-flex justify-content-center">
+<form><a href="#" class="text-decoration-none"><button type="button" class="btn btn-secondary btn-block">Refresh</button></a></form>
+  </li>
+  <!-- bottom -->
+  <li class="list-group-item border-bottom borderless pb-1 d-flex justify-content-center">
+<form><button type="button" class="btn btn-danger btn-block">Log out</button></form>
+  </li>
+</ul>
+</div>
+<div class="col-10">
+  <div class="row p-1">
+    <div class="col-12 border">
+      <h5>Account</h5>
+      <h6>Email: xxxxxx@gmail.com <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#emailModal">
+  Change
+</button></h6>
+      <h6>Password: xxxxxxxxxx <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#passwordModal">
+  Change
+</button></h6>
+      <h6>Username: Username <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#usernameModal">
+  Change
+</button></h6>
+    </div>
+  </div>
+  <div class="row p-1">
+    <div class="col-12 border">
+      <h5 class="d-flex justify-content-center">Shipping Address</h5>
+      <div class="row d-flex justify-content-around">
+      <div class="col-6 border p-1">
+        Country: Armenia
+      </div>
+      <div class="col-6 border p-1">
+        State: None
       </div>
     </div>
-    <div class="carousel-item">
-      <img src="https://eskipaper.com/images/motorcycles-6.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>motorcycles</h5>
-        <a class="btn btn-primary" href="#">See catalog</a>
+    <div class="row d-flex justify-content-around">
+      <div class="col-6 border p-1">
+        City: Ejmiachin
+      </div>
+      <div class="col-6 border p-1">
+       Mail index: ******
       </div>
     </div>
-    <div class="carousel-item">
-      <img src="https://eskipaper.com/images/	ferrari-forged-wheels-1.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Ferrari Forged Wheels</h5>
-        <a class="btn btn-primary" href="#">See catalog</a>
+      <div class="col-12 d-flex justify-content-center pt-1">
+        <button type="button" class="btn btn-outline-success btn-block" data-toggle="modal" data-target="#infoModal">Change</button>
+      </div>
+    </div>  
+  </div>
+  <div class="row border">
+    <table class="table table-bordered text-center">
+      <thead>
+<tr><th scope="col">Card Number</th>
+        </tr></thead><tbody>
+          <tr><td>XXXX-XXXX-XXXX-XXXX</td>
+        </tr></tbody>
+      
+    </table>
+      <div class="col-6">
+  <form class="pl-2">
+    <label>Card Expiration year</label>
+    <br>
+    <label>2021</label>
+  </form>
+</div>
+<div class="col-6">
+  <form class="pl-2">
+    <label>Card Expiration month</label>
+    <br>
+    <label>January</label>
+  </form>
+</div>
+<button type="button" class="btn btn-outline-success btn-block" data-toggle="modal" data-target="#cardModal">Change</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Change Information</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <input class="form-control" type="text" placeholder="Country">
+    <br>
+     <input class="form-control" type="text" placeholder="City">
+    <br>
+     <input class="form-control" type="text" placeholder="State">
+    <br>
+     <input class="form-control" type="text" placeholder="Mail index">
+    <br>
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <form>
+        <button type="button" class="btn btn-success" data-dismiss="modal">Save changes</button>
+      </form>
       </div>
     </div>
   </div>
 </div>
-</div>
-</div>
 
-<div class="container-fluid">
-<div class='row'>
-  <div class="col-md-12 d-flex">
-    <h1 class=" ml-auto  mt-5 mb-5 mr-auto text-white a4 ">CATEGORY</h1>
+
+<div class="modal fade" id="emailModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Email</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
       </div>
-
-
-
-      <div class="mx-auto border border-light card col-12 col-sm-6 col-lg-4 col-xl-2 a1 ">
-<img src="https://eskipaper.com/images/motorcycles-5.jpg" class="card-img-top" alt="...">
-<div class="card-body">
-<h5 class="card-title  text-white">Motorcycles</h5>
-<a href="#" class="btn btn-primary">ADD To Card</a>
-</div>
-</div>
-<div class="mx-auto border border-light card col-12 col-sm-6 col-lg-4 col-xl-2 a1 ">
-<img src="https://eskipaper.com/images/motorcycles-5.jpg" class="card-img-top" alt="...">
-<div class="card-body">
-<h5 class="card-title  text-white">Motorcycles</h5>
-<a href="#" class="btn btn-primary">ADD To Card</a>
-</div>
-</div>
-
-<div class="mx-auto border border-light card col-12 col-sm-6 col-lg-4 col-xl-2 a1 ">
-<img src="https://eskipaper.com/images/motorcycles-5.jpg" class="card-img-top" alt="...">
-<div class="card-body">
-<h5 class="card-title  text-white">Motorcycles</h5>
-<a href="#" class="btn btn-primary">ADD To Card</a>
-</div>
-</div>
-
-<div class="mx-auto border border-light card col-12 col-sm-6 col-lg-4 col-xl-2 a1 ">
-<img src="https://eskipaper.com/images/motorcycles-5.jpg" class="card-img-top" alt="...">
-<div class="card-body">
-<h5 class="card-title  text-white">Motorcycles</h5>
-<a href="#" class="btn btn-primary">ADD To Card</a>
-</div>
-</div>
-<div class="mx-auto border border-light card col-12 col-sm-6 col-lg-4 col-xl-2 a1 ">
-<img src="https://eskipaper.com/images/motorcycles-5.jpg" class="card-img-top" alt="...">
-<div class="card-body">
-<h5 class="card-title  text-white">Motorcycles</h5>
-<a href="#" class="btn btn-primary">ADD To Card</a>
-</div>
-</div>
-<div class="mx-auto border border-light card col-12 col-sm-6 col-lg-4 col-xl-2 a1 ">
-<img src="https://eskipaper.com/images/motorcycles-5.jpg" class="card-img-top" alt="...">
-<div class="card-body">
-<h5 class="card-title  text-white">Motorcycles</h5>
-<a href="#" class="btn btn-primary">ADD To Card</a>
-</div>
-</div>
-<div class="mx-auto border border-light card col-12 col-sm-6 col-lg-4 col-xl-2 a1 ">
-<img src="https://eskipaper.com/images/motorcycles-5.jpg" class="card-img-top" alt="...">
-<div class="card-body">
-<h5 class="card-title  text-white">Motorcycles</h5>
-<a href="#" class="btn btn-primary">ADD To Card</a>
-</div>
-</div>
-<div class="mx-auto border border-light card col-12 col-sm-6 col-lg-4 col-xl-2 a1 ">
-<img src="https://eskipaper.com/images/motorcycles-5.jpg" class="card-img-top" alt="...">
-<div class="card-body">
-<h5 class="card-title  text-white">Motorcycles</h5>
-<a href="#" class="btn btn-primary">ADD To Card</a>
-</div>
-</div>
-<div class="mx-auto border border-light card col-12 col-sm-6 col-lg-4 col-xl-2 a1 ">
-<img src="https://eskipaper.com/images/motorcycles-5.jpg" class="card-img-top" alt="...">
-<div class="card-body">
-<h5 class="card-title  text-white">Motorcycles</h5>
-<a href="#" class="btn btn-primary">ADD To Card</a>
-</div>
-</div>
-<div class="mx-auto border border-light card col-12 col-sm-6 col-lg-4 col-xl-2 a1 ">
-<img src="https://eskipaper.com/images/motorcycles-5.jpg" class="card-img-top" alt="...">
-<div class="card-body">
-<h5 class="card-title  text-white">Motorcycles</h5>
-<a href="#" class="btn btn-primary">ADD To Card</a>
-</div>
-</div>
-<div class="mx-auto border border-light card col-12 col-sm-6 col-lg-4 col-xl-2 a1 ">
-<img src="https://eskipaper.com/images/motorcycles-5.jpg" class="card-img-top" alt="...">
-<div class="card-body">
-<h5 class="card-title  text-white">Motorcycles</h5>
-<a href="#" class="btn btn-primary">ADD To Card</a>
-</div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+    <label for="exampleInputEmail1"><span class="font-weight-bold">New</span> email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+</form>
+   <div class="row">
+    <div class="col-12">
+              <small>We'll send verification to your email</small>
+      </div>
+      <div class="col-12 pb-1">
+        <form>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Send Verification</button>
+      </form>
+      </div>
+      <div class="col-12">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+        
+      </div>
+      <div class="modal-footer">
+    </div>
+  </div>
+  </div>
 </div>
 
-<div class="mx-auto border border-light card col-12 col-sm-6 col-lg-4 col-xl-2 a1 ">
-<img src="https://eskipaper.com/images/motorcycles-5.jpg" class="card-img-top" alt="...">
-<div class="card-body">
-<h5 class="card-title  text-white">Motorcycles</h5>
-<a href="#" class="btn btn-primary">ADD To Card</a>
-</div>
-</div>
-
-</div>
-
+<div class="modal fade" id="passwordModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Password</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Old Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+    <br>
+    <label for="exampleInputPassword1">New Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+    <hr>
+        <label for="exampleInputPassword1">Confirm Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <form>
+        <button type="button" class="btn btn-success" data-dismiss="modal">Save changes</button>
+      </form>
+    </div>
+  </div>
+  </div>
 </div>
 
 
+<div class="modal fade" id="usernameModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Username</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <input class="form-control" type="text" placeholder="Username">
+    <br>
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <form>
+        <button type="button" class="btn btn-success" data-dismiss="modal">Save changes</button>
+      </form>
+    </div>
+  </div>
+  </div>
+</div>
+
+<div class="modal fade" id="cardModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Card</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="#cardChange">Change your card number</label>
+            <input class="form-control" type="text" id="cardChange" placeholder="XXXX-XXXX-XXXX-XXXX">
+    <br>
+        <div class="form-row">
+      <div class="col-6">
+  
+    <label>Card Expiration year</label>
+    <select class="custom-select custom-select-lg mb-3">
+  <option selected="">Year</option>
+  <option value="1">2021</option>
+  <option value="2">2022</option>
+  <option value="3">2023</option>
+  <option value="4">2024</option>
+  <option value="5">2025</option>
+  <option value="6">2026</option>
+  <option value="7">2027</option>
+  <option value="8">2028</option>
+  <option value="9">2029</option>
+  <option value="10">2030</option>
+  <option value="11">2031</option>
+  <option value="12">...</option>
+</select>
+  
+</div>
+<div class="col-6">
+  <form class="pl-2">
+    <label>Card Expiration month</label>
+    <select class="custom-select custom-select-lg mb-3">
+  <option selected="">Month</option>
+  <option value="1">January</option> 
+  <option value="2">February</option>
+  <option value="3">March</option>
+  <option value="4">April</option>
+  <option value="5">May</option>
+  <option value="6">June</option>
+  <option value="7">July</option>
+  <option value="8">August</option>
+  <option value="9">September</option>
+  <option value="10">October</option>
+  <option value="11">November</option>
+  <option value="12">December</option>
+</select>
+  </form>
+</div>
+</div>
+<br>
+
+    <label for="exampleInputPassword1">CVP</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div></form>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <form>
+        <button type="button" class="btn btn-success" data-dismiss="modal">Save changes</button>
+      </form>
+    </div>
+  </div>
+  </div>
+</div>
 
 
 
@@ -495,5 +647,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	  <script src="jquery.fancybox.min.js"></script>
   </body>
 </html>
